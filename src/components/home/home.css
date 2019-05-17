@@ -1,0 +1,163 @@
+body {
+  /* background-color: #17252a; */
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.home-card {
+  min-height: calc(100vh - 2rem);
+}
+
+.my-font {
+  font-family: "Fira Mono", monospace;
+}
+
+.content {
+  position: relative;
+  height: fit-content;
+  z-index: 11;
+}
+
+.hr-line {
+  /* border-top: solid black 2px; */
+  height: 1px;
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+  margin: 0 auto;
+  transition: all 0.9s;
+}
+
+.content:hover .hr-line {
+  width: 90%;
+}
+
+.nav-ul,
+.nav {
+  margin: 0 auto;
+}
+
+.nav-ul li {
+  display: inline;
+}
+
+.li {
+}
+
+.li p {
+  margin-bottom: 10% !important;
+  cursor: pointer;
+}
+
+.li-line {
+  height: 1px;
+  width: 10%;
+  background-color: rgb(39, 39, 39);
+  margin: 0 auto;
+  transition: all 0.3s;
+  margin-top: -2%;
+}
+
+.li:hover .li-line {
+  width: 100%;
+}
+
+:root {
+  --line-color: #d3d3d3;
+}
+
+.home-card {
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.lines {
+  /* display: block; */
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.line {
+  width: 200vh;
+  height: 2px;
+  background: var(--line-color);
+  position: fixed;
+  transition: all 0.3s;
+  z-index: 10;
+  opacity: 0.1;
+}
+
+.line:hover {
+  height: 5px;
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: #005bea;
+}
+
+.line-1 {
+  right: 0;
+  top: 52%;
+  transform: translate(25%) rotate(120deg);
+}
+
+.line-2 {
+  right: 0;
+  top: 52%;
+  transform: translate(50%) rotate(120deg);
+}
+
+.line-3 {
+  left: 0;
+  top: 50%;
+  transform: translate(-30%) rotate(60deg);
+}
+
+.line-4 {
+  left: 0;
+  top: 50%;
+  transform: translate(-40%) rotate(60deg);
+}
+
+.line-5 {
+  left: 0;
+  top: 52%;
+  transform: translate(-35%) rotate(120deg);
+}
+
+.line-6 {
+  right: 0;
+  top: 50%;
+  transform: translate(35%) rotate(60deg);
+}
+
+.line-7 {
+  right: 0;
+  top: 52%;
+  transform: translate(35%) rotate(120deg);
+}
+
+.line-8 {
+  width: 100vw;
+  top: 60%;
+  transform: rotate(-5deg);
+}
+
+.home-card:hover .li-line {
+  height: 1px;
+}
+
+.home-card:hover .line {
+  opacity: 0.8;
+}
