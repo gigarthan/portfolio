@@ -47,6 +47,16 @@ export default () => (
                     <div className="li-line" />
                   </div>
                 </li>
+                <li className="m-2 mb-0">
+                  <div className="li">
+                    <p>
+                      <Link className="no-underline text-black" to="research">
+                        Research
+                      </Link>
+                    </p>
+                    <div className="li-line" />
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
