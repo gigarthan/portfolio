@@ -13,9 +13,15 @@ body {
       #989898;
   background-blend-mode: multiply, multiply;
   background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+
+  font-family: "Fira Mono", monospace;
 }
 
 .home-card {
+  min-height: calc(100vh - 2rem);
+}
+
+.full-height {
   min-height: calc(100vh - 2rem);
 }
 
@@ -99,13 +105,6 @@ body {
   opacity: 0.1;
 }
 
-.line:hover {
-  height: 5px;
-  opacity: 0.8;
-  cursor: pointer;
-  background-color: #005bea;
-}
-
 .line-1 {
   right: 0;
   top: 52%;
@@ -158,6 +157,16 @@ body {
   height: 1px;
 }
 
-.home-card:hover .line {
-  opacity: 0.8;
+@media only screen and (min-width: 1000px) {
+  .home-card:hover .line {
+    opacity: 0.8;
+    overflow: hidden;
+  }
+
+  .line:hover {
+    height: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: #005bea;
+  }
 }
