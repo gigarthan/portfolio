@@ -9,7 +9,9 @@ export default () => (
       <section className="flex">
         <section className="home-card w-full bg-white rounded m-4 shadow-lg flex flex-wrap justify-center overflow-hidden">
           <div className="mt-32 content">
-            <h1 className="my-font">Hi, I'm Gigarthan; Web Dev; JS Lover</h1>
+            <h1 className="my-font">
+              Hi, I'm Gigarthan; Developer from Sri Lanka
+            </h1>
             <div className="hr-line" />
             <div className="nav">
               <ul className="flex list-none justify-center my-font">
@@ -60,7 +62,7 @@ export default () => (
               </ul>
             </div>
           </div>
-          <section className="lines">
+          {/* <section className="lines">
             <div className="line line-1" />
             <div className="line line-2" />
             <div className="line line-3" />
@@ -69,7 +71,7 @@ export default () => (
             <div className="line line-6" />
             <div className="line line-7" />
             <div className="line line-8" />
-          </section>
+          </section> */}
         </section>
       </section>
     </section>

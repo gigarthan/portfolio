@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby"
 export default ({ data }) => {
   return (
     <div className="flex flex-wrap">
-      <div className="w-full bg-white full-height m-4 rounded overflow-hidden shadow-lg">
+      <div className="w-full bg-white full-height m-4 p-8 rounded overflow-hidden shadow-lg">
         <section>
           <article>
             <h1 className="my-font ml-2">Research Articles</h1>
